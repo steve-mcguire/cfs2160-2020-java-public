@@ -1,3 +1,5 @@
+package Week8;
+
 public class Employee {
 
     private int id;
@@ -68,16 +70,16 @@ public class Employee {
 
     public String parkingPermitStatus () {
         if ((this.jobTitle.startsWith ("Senior")) && (this.getSalary () > 22000)) {
-            return "Employee is permitted a car parking space.";
+            return "Week8.Employee is permitted a car parking space.";
         }
         else {
-            return "Employee is not permitted a car parking space.";
+            return "Week8.Employee is not permitted a car parking space.";
         }
     }
 
     @Override
     public String toString () {
-        final StringBuilder sb = new StringBuilder ("Employee{");
+        final StringBuilder sb = new StringBuilder ("Week8.Employee{");
 
         sb.append ("id=").append (id);
         sb.append (", name='").append (name).append ('\'');
@@ -90,6 +92,7 @@ public class Employee {
     }
 
     public static void main (String[] args) {
-
+        Employee e = new Employee(67, "Steve", "Lecturer", "Ilias", 17500);
+        System.out.println(e);
     }
 }
