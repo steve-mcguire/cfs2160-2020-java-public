@@ -92,7 +92,9 @@ public class Employee {
     }
 
     public static void main (String[] args) {
-        Employee e = new Employee(67, "Steve", "Lecturer", "Ilias", 17500);
-        System.out.println(e);
+        Employee steve = new Employee(67, "Steve", "Lecturer", "Ilias", 17500);
+        System.out.println(steve);
+        steve.giveSalaryRaise(5);
+        System.out.println(steve.getSalary());
     }
 }
