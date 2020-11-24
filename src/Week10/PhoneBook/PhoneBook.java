@@ -19,8 +19,8 @@ public class PhoneBook {
 
     public static void main(String[] args) {
         PhoneBook pb = new PhoneBook();
-        Contact steve = new Contact("Steve McGuire", "+44 484 675243");
-        Contact ilias = new Contact("Ilias Tachmazadis", "+44 484 6763432");
+        Contact steve = new Contact("Steve", "+44 484 675243");
+        Contact ilias = new Contact("Ilias", "+44 484 6763432");
         pb.addContact(steve);
         pb.addContact(ilias);
         pb.printPhoneBook();

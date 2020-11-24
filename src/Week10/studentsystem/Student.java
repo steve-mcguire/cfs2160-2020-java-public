@@ -1,4 +1,4 @@
-package Week10;
+package Week10.studentsystem;
 
 public class Student {
     private String studentID;
@@ -61,15 +61,5 @@ public class Student {
         this.patEmailAddress = patEmailAddress;
     }
 
-    @Override
-    public String toString() {
-        return "Student{" +
-                "studentID='" + studentID + '\'' +
-                ", name='" + name + '\'' +
-                ", DOB='" + DOB + '\'' +
-                ", emailAddress='" + emailAddress + '\'' +
-                ", patName='" + patName + '\'' +
-                ", patEmailAddress='" + patEmailAddress + '\'' +
-                '}';
-    }
+
 }
