@@ -1,4 +1,4 @@
-package Week10.christmasclub;
+package Week10.savingsclub;
 
 //DO NOT EDIT THIS CLASS FILE
 

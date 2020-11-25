@@ -1,6 +1,6 @@
-package Week10.christmasclub;
+package Week10.savingsclub;
 
-public class ChristmasClub {
+public class SavingsClub {
     //class attributes
 
     //constructors
