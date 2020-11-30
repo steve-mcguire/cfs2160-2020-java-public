@@ -10,8 +10,7 @@ public class SavingsClub {
     //main method
     public static void main(String[] args) {
 
-        ClubMemberChild t = new ClubMemberChild("CMC Steve", 50);
-        System.out.println(t);
+
 
         ClubMember steve = new ClubMember("Steve", 21);
         if(steve.addContribution(-10)){
