@@ -4,11 +4,13 @@ public class Employee {
     private String name;
     private String emailAddress;
     private int idNumber;
+    private int rating;
 
     public Employee(String name, String emailAddress, int idNumber) {
         this.name = name;
         this.emailAddress = emailAddress;
         this.idNumber = idNumber;
+        this.rating = 100;
     }
 
     public String getName() {
@@ -35,7 +37,18 @@ public class Employee {
         this.idNumber = idNumber;
     }
 
-    public static void main(String[] args) {
 
+
+    public int getRating() {
+        return rating;
     }
+
+    @Override
+    public String toString() {
+        return name  +
+                " - " + emailAddress + '\'' +
+                " - " + idNumber;
+    }
+
+
 }
