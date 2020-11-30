@@ -43,12 +43,7 @@ public class Employee {
         return rating;
     }
 
-    @Override
-    public String toString() {
-        return name  +
-                " - " + emailAddress + '\'' +
-                " - " + idNumber;
-    }
+
 
 
 }
