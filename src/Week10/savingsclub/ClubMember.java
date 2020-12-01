@@ -30,7 +30,7 @@ public class ClubMember {
 
     public boolean addContribution(int contribution) {
         if (contribution > 0){
-            this.contribution = contribution;
+            this.contribution += contribution;
             return true;
         }else{
             return false;
