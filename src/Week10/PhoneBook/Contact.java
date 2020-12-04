@@ -28,4 +28,8 @@ public class Contact {
     public String toString() {
         return name + " - " + phoneNumber;
     }
+
+    public static void main(String[] args) {
+        Contact steve = new Contact("Steve", "+44 878 87876");
+    }
 }

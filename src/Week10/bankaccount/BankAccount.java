@@ -1,13 +1,13 @@
 package Week10.bankaccount;
 
 public class BankAccount {
-    //add attributes of account here
+    //attributes of account here
     private String accountHolder;
     private String accountNumber;
     private double balance;
     private boolean hasOverdraft;
 
-    //add constructor of account here
+    //constructor of account here
 
     public BankAccount(String accountHolder, String accountNumber, double balance, boolean hasOverdraft) {
         this.accountHolder = accountHolder;
@@ -31,6 +31,7 @@ public class BankAccount {
 
     //add main here
     public static void main(String[] args) {
+
 
     }
 }

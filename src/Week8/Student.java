@@ -61,12 +61,4 @@ public class Student {
         this.patEmailAddress = patEmailAddress;
     }
 
-    public static void main(String[] args) {
-        System.out.println("Creating New Student");
-        Student steve = new Student("u0670824", "Steve McGuire");
-        System.out.println("Printing Student Details");
-        System.out.println(steve.getName());
-        System.out.println(steve.getStudentID());
-
-    }
 }
