@@ -17,7 +17,7 @@ public class BankAccount {
     }
 
 
-    //add getters an setters
+    //add getters and setters
 
     public void deposit(double amount){
         this.balance += amount;
