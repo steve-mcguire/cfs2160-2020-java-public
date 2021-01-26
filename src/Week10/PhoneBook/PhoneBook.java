@@ -5,7 +5,9 @@ import java.util.ArrayList;
 public class PhoneBook {
     private ArrayList<Contact> phoneBook = new ArrayList<>();
 
-    public PhoneBook() {}
+    public PhoneBook() {
+
+    }
 
     public void addContact(Contact c){
          phoneBook.add(c);
@@ -17,13 +19,18 @@ public class PhoneBook {
         }
     }
 
+
+
     public static void main(String[] args) {
+
         PhoneBook pb = new PhoneBook();
         Contact steve = new Contact("Steve", "+44 484 675243");
         Contact ilias = new Contact("Ilias", "+44 484 6763432");
         pb.addContact(steve);
         pb.addContact(ilias);
         pb.printPhoneBook();
+
+
 
     }
 }
