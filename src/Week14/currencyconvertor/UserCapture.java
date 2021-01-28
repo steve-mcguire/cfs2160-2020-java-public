@@ -1,7 +1,5 @@
 package Week14.currencyconvertor;
 
-import Week10.savingsclub.SavingsClub;
-
 import java.util.Scanner;
 
 public class UserCapture {
