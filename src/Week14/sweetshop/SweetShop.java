@@ -7,7 +7,7 @@ import java.util.Locale;
 import java.util.Scanner;
 
 public class SweetShop {
-    ArrayList<Integer> prices = new ArrayList<>();
+    private ArrayList<Integer> prices = new ArrayList<>();
 
     public SweetShop() {}
 
@@ -19,13 +19,28 @@ public class SweetShop {
         this.prices.add(price);
     }
 
-    /**#
+    /**
+     *
+     * @return the prices ArrayList
+     */
+    public ArrayList<Integer> getPrices(){
+        return this.prices;
+    }
+
+    /**
      * Processes the input into an Integer, removes letter p from the end
      * @param input String value to process
      * @return price with last letter removed
      */
     public Integer processInput(String input){
         return Integer.parseInt(input.substring(0, input.length() -1));
+    }
+
+    /**
+     *
+     */
+    public void hello(){
+        System.out.println("Hello");
     }
 
     /**
@@ -44,6 +59,11 @@ public class SweetShop {
     public Integer captureIntInput(){
         Scanner s = new Scanner(System.in);
         return s.nextInt();
+    }
+
+    private Double captureDoubleInput(){
+        Scanner s = new Scanner(System.in);
+        return s.nextDouble();
     }
 
     /**
@@ -71,7 +91,7 @@ public class SweetShop {
      */
     public double avg(ArrayList<Integer> list){
         double total = 0;
-        for(Integer i : list){
+        for(int i : list){
             total += i;
         }
         return total / list.size();
@@ -91,16 +111,22 @@ public class SweetShop {
     }
 
     /**
-     *
-     * @return the prices ArrayList
+     * Formats a double to represent GBP£
+     * @param amount the amount to format
+     * @return GBP representation of double
      */
-    public ArrayList<Integer> getPrices(){
-        return this.prices;
-    }
-
     public String formatGBP(double amount){
         amount = amount / 100;
         NumberFormat gbp = NumberFormat.getCurrencyInstance(Locale.UK);
         return gbp.format(amount);
+    }
+
+    public String getPricesDetails(){
+        StringBuilder sb = new StringBuilder();
+        for(Integer i : prices){
+            sb.append(i);
+            sb.append("\n");
+        }
+        return sb.toString();
     }
 }
