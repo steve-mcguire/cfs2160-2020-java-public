@@ -10,7 +10,7 @@ public class SweetMain {
 
         int y = ss.captureIntInput();
 
-        for (int i = 1; i < (y + 1); i++){
+        for (int i = 1; i <= y; i++){
             System.out.println("Please enter the price for sweet " + i);
             String p = ss.captureStringInput();
             Integer x = ss.processInput(p);
@@ -23,9 +23,9 @@ public class SweetMain {
         System.out.println("Sweet Shop Report");
         System.out.println("Total price is: " + ss.formatGBP(ss.total(prices)));
         System.out.println("Number of sweets is: " + prices.size());
-        System.out.println("Max sweet price is: " + ss.formatGBP(ss.min(ss.getPrices())));
-        System.out.println("Min sweet price is: " + ss.formatGBP(ss.max(ss.getPrices())));
-        System.out.println("Avg sweet price is: " + ss.formatGBP(ss.avg(ss.getPrices())));
+        System.out.println("Max sweet price is: " + ss.formatGBP(ss.minInt(prices)));
+        System.out.println("Min sweet price is: " + ss.formatGBP(ss.maxInt(prices)));
+        System.out.println("Avg sweet price is: " + ss.formatGBP(ss.avg(prices)));
         System.out.println(ss.getPricesDetails());
     }
 }

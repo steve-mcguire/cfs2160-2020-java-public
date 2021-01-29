@@ -33,15 +33,10 @@ public class SweetShop {
      * @return price with last letter removed
      */
     public Integer processInput(String input){
-        return Integer.parseInt(input.substring(0, input.length() -1));
+        String sub = input.substring(0, input.length() -1);
+        return Integer.parseInt(sub);
     }
 
-    /**
-     *
-     */
-    public void hello(){
-        System.out.println("Hello");
-    }
 
     /**
      * Get a string from the user
@@ -71,7 +66,7 @@ public class SweetShop {
      * @param list the list from which to find the min value
      * @return lowest contained value as Integer
      */
-    public Integer min(ArrayList<Integer> list){
+    public Integer minInt(ArrayList<Integer> list){
         return Collections.min(list);
     }
 
@@ -80,7 +75,7 @@ public class SweetShop {
      * @param list the list from which to find the max value
      * @return highest contained value as Integer
      */
-    public Integer max(ArrayList<Integer> list){
+    public Integer maxInt(ArrayList<Integer> list){
         return Collections.max(list);
     }
 

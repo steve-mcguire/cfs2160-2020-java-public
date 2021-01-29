@@ -36,7 +36,8 @@ public class CurrencyConvertor5 {
         String name = cc.captureStringInput();
         System.out.println("Hello " + name + " it's good to meet you.");
 
-        //double e = Double.parseDouble(s);
+        double e = Double.parseDouble("3.3");
+        System.out.println(e);
         //double g = cc.convertEuroToGBP(e);
         //String r = cc.formatGBP(g);
         //System.out.println(r);
