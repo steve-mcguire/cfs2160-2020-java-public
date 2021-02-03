@@ -1,4 +1,6 @@
-package Week14.sweetshop;
+package Week14.sweetshop.stuff;
+
+import Week14.sweetshop.SweetShop;
 
 public class HelloName {
     public static void main(String[] args) {

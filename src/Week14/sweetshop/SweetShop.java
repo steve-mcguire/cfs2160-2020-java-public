@@ -7,16 +7,21 @@ import java.util.Locale;
 import java.util.Scanner;
 
 public class SweetShop {
-    private ArrayList<Integer> prices = new ArrayList<>();
+    private ArrayList<Integer> prices ;
 
-    public SweetShop() {}
+    public SweetShop() {
+        prices = new ArrayList<>();
+    }
 
     /**
      * Add an integer to the prices ArrayList
      * @param price to add to ArrayList
      */
     public void addSweet(Integer price){
-        this.prices.add(price);
+        if(price > 0){
+            this.prices.add(price);
+        }
+
     }
 
     /**
@@ -112,8 +117,8 @@ public class SweetShop {
      */
     public String formatGBP(double amount){
         amount = amount / 100;
-        NumberFormat gbp = NumberFormat.getCurrencyInstance(Locale.UK);
-        return gbp.format(amount);
+        NumberFormat nf = NumberFormat.getCurrencyInstance(Locale.getDefault());
+        return nf.format(amount);
     }
 
     public String getPricesDetails(){

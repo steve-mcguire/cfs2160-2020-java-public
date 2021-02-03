@@ -1,8 +1,6 @@
 package Week14.currencyconvertor;
 
-import java.text.FieldPosition;
 import java.text.NumberFormat;
-import java.text.ParsePosition;
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -47,4 +45,7 @@ public class CurrencyConvertor {
             System.out.println(n);
         }
     }
+
+
+
 }
