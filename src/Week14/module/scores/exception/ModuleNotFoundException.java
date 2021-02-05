@@ -1,4 +1,4 @@
-package Week14.module.scores;
+package Week14.module.scores.exception;
 
 public class ModuleNotFoundException extends Exception{
     public ModuleNotFoundException() {}

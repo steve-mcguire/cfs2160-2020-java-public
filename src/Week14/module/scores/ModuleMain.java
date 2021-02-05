@@ -1,8 +1,12 @@
 package Week14.module.scores;
 
+import Week14.module.scores.exception.ModuleNotFoundException;
+
 public class ModuleMain {
     public static void main(String[] args) throws ModuleNotFoundException {
+        //create the controller
         ModuleController mc = new ModuleController();
+        //create and add the Modules
         Module cfs2160 = new Module("CFS2160", "Software Design and Development", 96);
         mc.addModule(cfs2160);
         Module cfm2175 = new Module("CFM2175", "Computing Science and Mathematics", 90);
@@ -14,7 +18,8 @@ public class ModuleMain {
         Module cfs2102 = new Module("CFS2102", "Computer Network Fundamentals", 92);
         mc.addModule(cfs2102);
 
-
+        //testing the methods
+        //all printing is done in the test section and not in the methods of the ModuleController class.
         System.out.println("TESTING THE METHODS");
         System.out.println("PRINTING MODULES");
         try{
