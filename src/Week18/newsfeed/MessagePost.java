@@ -10,6 +10,9 @@ public class MessagePost extends Post{
 
     @Override
     public String display() {
-        return super.getAuthor() + " " + super.getLikes() + " " + this.message;
+        return "------------------\n" +
+                super.getPostMeta() +
+                this.message + "\n" +
+                super.getCommentsString();
     }
 }

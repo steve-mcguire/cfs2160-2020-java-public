@@ -18,6 +18,10 @@ public class ImagePost extends Post{
 
     @Override
     public String display() {
-        return super.getAuthor() + " " + super.getLikes() + " " + this.imageName;
+        return "------------------\n" +
+                super.getPostMeta() +
+                this.imageName + "\n" +
+                super.getCommentsString();
+
     }
 }

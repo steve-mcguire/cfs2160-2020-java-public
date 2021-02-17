@@ -1,15 +1,18 @@
 package Week18.newsfeed;
 
 import java.util.ArrayList;
+import java.util.Date;
 
 abstract class Post {
     private String author;
     private ArrayList<String> comments = new ArrayList<>();
     private Integer likes;
+    private Date datePosted;
 
     public Post(String author) {
         this.author = author;
         this.likes = 0;
+        this.datePosted = new Date();
     }
 
     public String getAuthor() {
@@ -20,12 +23,31 @@ abstract class Post {
         this.author = author;
     }
 
-    public ArrayList<String> getComments() {
+    public ArrayList<String> getCommentsList() {
         return comments;
     }
 
-    public void setComments(ArrayList<String> comments) {
-        this.comments = comments;
+    public String getCommentsString(){
+        StringBuilder sb = new StringBuilder();
+        if(this.comments.size() == 0){
+            sb.append("No comments yet\n");
+        }else{
+            sb.append("Comments:\n");
+            for(String comment : comments){
+                sb.append(comment).append("\n");
+            }
+        }
+        return sb.toString();
+    }
+
+    public String getPostMeta(){
+        return  "Author: " + this.author + "\n" +
+                "Posted: " + this.datePosted + "\n" +
+                "Likes: " + this.likes + "\n";
+    }
+
+    public void addComment(String comment){
+        this.comments.add(comment);
     }
 
     public Integer getLikes() {
@@ -36,7 +58,9 @@ abstract class Post {
         this.likes = likes;
     }
 
-    public String display(){
-        return this.author + " " + this.likes;
+    public void like(){
+        this.likes += 1;
     }
+
+    public abstract String display();
 }

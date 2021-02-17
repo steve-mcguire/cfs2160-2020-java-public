@@ -10,6 +10,9 @@ public class VideoPost extends Post{
 
     @Override
     public String display() {
-        return super.getAuthor() + " " + super.getLikes() + " " + this.videoUrl;
+        return "------------------\n" +
+                super.getPostMeta() +
+                this.videoUrl + "\n" +
+                super.getCommentsString();
     }
 }
