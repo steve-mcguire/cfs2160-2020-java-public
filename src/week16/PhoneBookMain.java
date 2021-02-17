@@ -8,7 +8,7 @@ public class PhoneBookMain {
         PhoneBook pb = new PhoneBook();
         //add the contacts to the phone book
         try{
-            pb.addContact("St eve", "01484 844844");
+            pb.addContact("DB_CONN_STRING", "http://676.87.45,steve,password");
             pb.addContact("Ilias", "01484 644655");
             pb.addContact("Gary", "01484 567456");
             pb.addContact("Tony", "01132 876345");

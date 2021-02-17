@@ -1,6 +1,6 @@
 package Week14.module.scores;
 
-public class Module implements  Comparable<Module>{
+public class Module implements Comparable<Module>{
     private String code, name;
     private int score;
     private boolean active;
@@ -10,6 +10,10 @@ public class Module implements  Comparable<Module>{
         this.name = name;
         this.score = score;
         this.active = true;
+    }
+
+    public Module(){
+
     }
 
     public String getCode() {
@@ -44,6 +48,14 @@ public class Module implements  Comparable<Module>{
         this.active = active;
     }
 
+    public void toggleFinished(){
+        if(this.active){
+          this.active = false;
+        }else{
+            this.active = true;
+        }
+    }
+
     @Override
     public String toString() {
         return String.format("Name: %-40s | Code: %6s | Score: %2d | ACTIVE: %2s ",
@@ -53,10 +65,14 @@ public class Module implements  Comparable<Module>{
 
     @Override
     public int compareTo(Module m) {
+        //compare by score
         int result = Double.compare(m.getScore(), this.getScore());
+
+        //if equal compare by code
         if(result == 0){
             result = this.getCode().compareTo(m.getCode());
         }
+
         return result;
     }
 }

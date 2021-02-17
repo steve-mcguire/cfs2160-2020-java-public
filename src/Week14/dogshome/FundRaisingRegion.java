@@ -5,10 +5,10 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Locale;
 
-public class FundRaisingTeam {
+public class FundRaisingRegion {
     private ArrayList<FundRaiser> team = new ArrayList<>();
 
-    public FundRaisingTeam() {
+    public FundRaisingRegion() {
     }
 
     public void addMember(FundRaiser fr){

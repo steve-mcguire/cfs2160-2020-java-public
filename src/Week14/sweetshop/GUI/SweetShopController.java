@@ -50,8 +50,6 @@ public class SweetShopController {
         }catch(NumberFormatException n){
             System.out.println(n);
         }
-
-
     }
 
     public void btnCheckoutClick(ActionEvent actionEvent) {

@@ -61,6 +61,10 @@ public class SweetShop {
         return s.nextInt();
     }
 
+    /**
+     *
+     * @return
+     */
     private Double captureDoubleInput(){
         Scanner s = new Scanner(System.in);
         return s.nextDouble();

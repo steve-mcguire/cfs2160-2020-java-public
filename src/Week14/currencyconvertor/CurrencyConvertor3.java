@@ -32,7 +32,10 @@ public class CurrencyConvertor3 {
         try{
             return Double.parseDouble(s);
         }catch(NumberFormatException n) {
-            throw new NumberFormatException("Please enter a number only");
+            throw new NumberFormatException("Please enter a number only " +
+                    "Please enter " + "a number only Please enter a number " +
+                    "only Please enter a number only  " + "Please enter a " +
+                    "number only");
         }
     }
 
