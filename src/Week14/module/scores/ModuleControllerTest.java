@@ -49,6 +49,4 @@ class ModuleControllerTest {
         ArrayList<Module> result = mc.getPassedModules(50);
         assertEquals(result.size(), 3);
     }
-
-
 }
