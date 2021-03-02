@@ -6,8 +6,9 @@ import java.util.ArrayList;
 import java.util.Date;
 
 abstract class Post {
-    private String author;
     private ArrayList<String> comments = new ArrayList<>();
+
+    private String author;
     private Integer likes;
     private Date datePosted;
 
@@ -29,6 +30,12 @@ abstract class Post {
         return comments;
     }
 
+    public String getPostMeta(){
+        return  "Author: " + this.author + "\n" +
+                "Posted On: " + this.datePosted + "\n" +
+                "Likes: " + this.likes + "\n";
+    }
+
     public String getCommentsString(){
         StringBuilder sb = new StringBuilder();
         if(this.comments.size() == 0){
@@ -40,12 +47,6 @@ abstract class Post {
             }
         }
         return sb.toString();
-    }
-
-    public String getPostMeta(){
-        return  "Author: " + this.author + "\n" +
-                "Posted: " + this.datePosted + "\n" +
-                "Likes: " + this.likes + "\n";
     }
 
     public void addComment(String comment){
