@@ -1,5 +1,7 @@
 package Week18.newsfeed;
 
+import Week18.newsfeed.exception.NewsFeedException;
+
 import java.util.ArrayList;
 import java.util.Date;
 
