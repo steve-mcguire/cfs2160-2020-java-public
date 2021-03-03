@@ -17,8 +17,8 @@ public class EventPost extends Post{
         return "------------------\n" +
                 super.getPostMeta() +
                 "Title " + this.eventTitle + "\n" +
-                "On " + this.date + "\n" +
-                "Where " + this.location + "\n" +
+                "On: " + this.date + "\n" +
+                "Where: " + this.location + "\n" +
                 "Cost " + this.cost + "\n" +
                 super.getCommentsString();
     }

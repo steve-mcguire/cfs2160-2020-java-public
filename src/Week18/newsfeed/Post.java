@@ -16,6 +16,7 @@ abstract class Post {
         this.author = author;
         this.likes = 0;
         this.datePosted = new Date();
+
     }
 
     public String getAuthor() {
@@ -31,7 +32,7 @@ abstract class Post {
     }
 
     public String getPostMeta(){
-        return  "Author: " + this.author + "\n" +
+        return  "Posted By: " + this.author + "\n" +
                 "Posted On: " + this.datePosted + "\n" +
                 "Likes: " + this.likes + "\n";
     }
@@ -63,6 +64,10 @@ abstract class Post {
 
     public void like(){
         this.likes += 1;
+    }
+
+    public void steveTestMethod(){
+
     }
 
     public abstract String display();
