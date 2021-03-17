@@ -6,6 +6,7 @@ public class ModuleNotFoundException extends Exception{
     public ModuleNotFoundException(String message, String searchTerm){
         super (message);
         //do something with the search term
-        System.out.println(searchTerm + "ERROR LOG");
+        //System.out.println(searchTerm + " ERROR LOG");
+
     }
 }

@@ -32,21 +32,22 @@ class ProductTypeControllerTest {
     @Test
     void searchModules() throws ModuleNotFoundException {
         //Check returned object is of correct type
-        assertEquals(mc.searchModules("CFS2160").getClass(),  Module.class);
+        Module result = mc.searchModules("CFS2160");
+        assertEquals(Module.class, result.getClass());
 
         //Check to see if returned Module is correct instance
-        Module cfs2160 = mc.searchModules("CFS2160");
-        assertEquals(cfs2160.getCode(), "CFS2160");
+        assertEquals("CFS2160", result.getCode());
 
         //Check to see that incorrect search term throw exception
         assertThrows(ModuleNotFoundException.class, () -> {
-            mc.searchModules("CFS2162");
+            mc.searchModules("CFS2165");
         });
     }
 
     @Test
     void getPassedModules() throws Exception {
-        ArrayList<Module> result = mc.getPassedModules(50);
-        assertEquals(result.size(), 3);
+        //check for correct number of modules in passed modules
+        ArrayList<Module> result = mc.getPassedModules(46);
+        assertEquals(4, result.size());
     }
 }

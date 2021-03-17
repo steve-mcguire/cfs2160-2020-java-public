@@ -72,7 +72,7 @@ public class ModuleController {
         ArrayList<Module> passedModules = new ArrayList<>();
         if(passMark > 0 && passMark <= 100 ){
             for(Module m : modules){
-                if(m.getScore() > passMark){
+                if(m.getScore() >= passMark){
                     passedModules.add(m);
                 }
             }

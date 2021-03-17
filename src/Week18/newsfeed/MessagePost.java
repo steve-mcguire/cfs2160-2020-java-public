@@ -8,6 +8,7 @@ public class MessagePost extends Post{
         this.message = message;
     }
 
+
     @Override
     public String display() {
         return "------------------\n" +
