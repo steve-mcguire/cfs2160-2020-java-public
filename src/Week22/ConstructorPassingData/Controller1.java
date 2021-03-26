@@ -74,8 +74,11 @@ public class Controller1 {
         // Create the second controller, which loads its own FXML file. We pass a reference to this controller
         // using the keyword [this]; that allows the second controller to access the methods contained in here.
         Controller2 controller2 = new Controller2(this);
+        //Controller2 controller2 = new Controller2();
 
-        //thisStage.close();
+
+
+        thisStage.close();
 
         // Show the new stage/window
         controller2.showStage();

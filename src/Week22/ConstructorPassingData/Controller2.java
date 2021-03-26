@@ -31,7 +31,7 @@ public class Controller2 {
         this.controller1 = controller1;
 
         // Create the new stage
-        //thisStage = new Stage();
+        thisStage = new Stage();
 
         // Load the FXML file
         try {
