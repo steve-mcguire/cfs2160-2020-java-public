@@ -77,8 +77,10 @@ public class Controller2 {
      */
     private void setTextOnLayout1() {
         System.out.println("in method");
+        //pass some data back to the parent / controller1 instance
         controller1.setTextFromController2(txtToFirstController.getText());
         thisStage.close();
+        //re-open controller one from the existing instance
         controller1.showStage();
     }
 }
