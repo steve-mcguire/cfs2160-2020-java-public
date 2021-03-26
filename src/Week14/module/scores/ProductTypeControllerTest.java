@@ -16,7 +16,7 @@ class ProductTypeControllerTest {
     @BeforeEach
     void setUp() {
         mc = new ModuleController();
-        Module cfs2160 = new Module("CFS2160", "Software Design and Development", 46);
+        Module cfs2160 = new Module("CFS2160", "Software Design and Development", 40);
         mc.addModule(cfs2160);
         Module cfm2175 = new Module("CFM2175", "Computing Science and Mathematics", 36);
         mc.addModule(cfm2175);
@@ -47,7 +47,7 @@ class ProductTypeControllerTest {
     @Test
     void getPassedModules() throws Exception {
         //check for correct number of modules in passed modules
-        ArrayList<Module> result = mc.getPassedModules(46);
+        ArrayList<Module> result = mc.getPassedModules(40);
         assertEquals(4, result.size());
     }
 }

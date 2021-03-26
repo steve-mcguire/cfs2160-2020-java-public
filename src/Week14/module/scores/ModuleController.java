@@ -5,9 +5,10 @@ import Week14.module.scores.exception.ModuleNotFoundException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Iterator;
+import java.util.List;
 
 public class ModuleController {
-    private ArrayList<Module> modules = new ArrayList<>();
+    private List<Module> modules = new ArrayList<>();
 
     public ModuleController() {}
 
