@@ -41,10 +41,7 @@ public class Screen1Controller {
                 //Set the scene with the new root (created from the loaded.load() above)
                 stage.setScene(new Scene(parent));
                 stage.setTitle("Second Window");
-
             }
-
-
         }catch(Exception e){
             System.out.println(e);
         }

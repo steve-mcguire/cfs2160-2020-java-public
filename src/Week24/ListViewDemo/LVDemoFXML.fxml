@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Week24.ListViewDemo.LVDemoFXMLController">
+   <children>
+      <Button fx:id="btnAddToLVTwo" layoutX="27.0" layoutY="549.0" mnemonicParsing="false" onAction="#btnAddToLVTwoClick" text="Add to LV Two" />
+      <Label layoutX="27.0" layoutY="45.0" text="LV One" />
+      <ListView fx:id="lvOne" layoutX="25.0" layoutY="75.0" prefHeight="450.0" prefWidth="350.0" />
+      <ListView fx:id="lvTwo" layoutX="426.0" layoutY="75.0" prefHeight="450.0" prefWidth="350.0" />
+      <Label layoutX="426.0" layoutY="45.0" text="LV Two" />
+      <Label layoutX="27.0" layoutY="14.0" text="List View Demo - Steve McGuire" />
+      <Button fx:id="btnRemove" layoutX="426.0" layoutY="549.0" mnemonicParsing="false" onAction="#btnRemoveClick" text="Remove" />
+   </children>
+</AnchorPane>
