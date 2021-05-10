@@ -1,4 +1,4 @@
-package Week10.savingsclub;
+package Week10.SavingsClub;
 
 public class ClubMember {
     //DO NOT MAKE CHANGES TO THIS FILE

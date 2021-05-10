@@ -1,4 +1,4 @@
-package Week10.savingsclub;
+package Week10.SavingsClub;
 
 import java.util.ArrayList;
 
